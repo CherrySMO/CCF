@@ -1,1 +1,130 @@
-Try
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Design Test</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #000000;
+        color: #D4D4D4;
+        margin: 0;
+        line-height: 1.6;
+      }
+      h1, h2, h3 {
+        color: #FFFFFF;
+      }
+      a {
+        color: #87CEEB;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      a:hover {
+        color: #FFFFFF;
+      }
+      header, article, aside, footer {
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #121212;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      nav a {
+        font-weight: bold;
+      }
+      section {
+        padding: 20px 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+        margin-top: 15px;
+      }
+      body > * {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #000000;
+        border-radius: 0;
+        box-shadow: none;
+        border-bottom: 1px solid #333333;
+      }
+      article > section:not(:last-of-type) {
+        border-bottom: 1px solid #333333;
+        margin-bottom: 20px;
+      }
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        background-color: #000000;
+        border-radius: 0;
+        box-shadow: none;
+        border-top: 1px solid #333333;
+      }
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <section id="home">
+        <h1>Home</h1>
+        <p>This is the main content for the home section.</p>
+      </section>
+      <section id="products">
+        <h1>Products</h1>
+        <img src="images.jpg" alt="An image of a charger">
+      </section>
+      <section id="about">
+        <h1>About</h1>
+        <p>This section provides information about our company.</p>
+      </section>
+      <section id="contact">
+        <h1>Contact Us</h1>
+        <p>You can find our contact information here.</p>
+      </section>
+    </article>
+    <aside>
+      <h2>Related Content</h2>
+      <ul>
+        <li><a href="#">Link to another article</a></li>
+        <li><a href="#">Our most popular product</a></li>
+      </ul>
+      <h3>Advertisement</h3>
+      <p>This is a small ad space test.</p>
+    </aside>
+    <footer>
+      <p>&copy;2025 My Web Engineering Website. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
